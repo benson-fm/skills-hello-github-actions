@@ -2,6 +2,8 @@ name: Post Thank You Comment
 on:
    pull_request:
      types: [closed]
+permissions:
+   pull-requests: write
 jobs:
    build:
      if: github.event.pull_request.merged == true
